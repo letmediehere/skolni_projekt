@@ -1,0 +1,600 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/**********************GLOBAL*********************/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  position: absolute;
+  background-color: #f3950d;
+  color: white;
+  left: 48%;
+  font-size: 1.8rem;
+}
+
+footer {
+  background-color: #0f2c67;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  padding: 10px 0 40px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+/**********************NAVIGATION*********************/
+
+.navbar {
+  font-size: 1.3rem;
+  background: #0f2c67;
+  line-height: 2;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.navbar a:hover {
+  border: #f0e5af solid 2px;
+  background: #cd1818d0;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.search {
+  display: inline-flex;
+  border: 5px solid #cd1818;
+  border-radius: 10px;
+}
+
+.search button {
+  font-size: 1.5rem;
+}
+
+.nav-link,
+.logo,
+.subnavbtn {
+  text-decoration: none;
+  color: rgb(248, 248, 248);
+  font-size: 1.5rem;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  border: 1px solid white;
+  padding: 5px;
+  background-image: linear-gradient(to right, #cd1818, #0f2c67);
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+}
+
+.active {
+  display: block;
+}
+
+.subnav {
+  float: space-between;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.s-results {
+  display: grid;
+  grid-template-columns: auto;
+  margin-left: 10px;
+  list-style: none;
+}
+
+.s-results a {
+  font-size: 18px;
+  text-decoration-line: underline;
+}
+
+.subnav-content {
+  display: none;
+  width: 20%;
+  z-index: 1;
+  margin: auto;
+}
+
+.subnav-content a {
+  display: flex;
+  justify-content: center;
+}
+
+#submit {
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  padding: 1.5%;
+  background-color: rgb(128, 255, 219);
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/****** HEADER *****/
+
+.home-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.header-main {
+  position: static;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 20px;
+}
+
+.container-authors {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-authors {
+  text-align: left;
+  font-size: 1.4rem;
+  padding-bottom: 15px;
+}
+
+.authors {
+  clear: both;
+  width: 95%;
+  margin: 20px auto 0;
+  background-color: #90dfaa;
+  padding: 20px 10px 100px;
+}
+
+header {
+  background-color: #f3950d;
+  text-align: center;
+  padding: 15px 0 60px 0;
+}
+
+.bread-crumbs ul > a > li:nth-child(2) {
+  color: #797070b4;
+  margin-top: 5px;
+}
+
+.btn-header {
+  background: #EDEDED;
+  background-image: -webkit-linear-gradient(top, #EDEDED, #254D8D);
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding: 2px;
+  -webkit-box-shadow: -3px 1px 20px 0 #000000;
+  -moz-box-shadow: -3px 1px 20px 0 #000000;
+  box-shadow: -3px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #0059A0;
+  border: solid #FFFFFF 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-header:hover {
+  border: solid #337FED 1px;
+  background: #D01E1E;
+  background-image: -webkit-linear-gradient(top, #D01E1E, #0D78F1);
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.bread-crumbs {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 1.3rem;
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+  top: -10px;
+}
+
+.bread-crumbs ul li{
+  float: left;
+  list-style: none;
+}
+
+.bread-crumbs a:hover {
+  text-decoration: underline;
+  color: #434447;
+}
+
+/********* LAYOUT ******/
+
+.grid-index {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  margin: 5px;
+  grid-column-gap: 5px
+}
+
+.clanek-logo {
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #ddd2b3;
+  border: 2px solid black;
+  margin-bottom: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto;
+  background-color: #ddd2b3;
+  padding: 10px;
+}
+
+.reklama {
+  border: 1px solid black;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.clanky {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.clanek-logo img {
+  width: 120px;
+  height: 120px;
+}
+
+.clanek-logo p {
+  font-weight: bold;
+  color: #252527;
+}
+
+.odkazy {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.tel {
+  color: inherit;
+  text-decoration: inherit;
+}
+.autori ul {
+  margin: 20px;
+  padding: 10px;
+  list-style-type: disc;
+  background-color: rgb(115, 187, 211);
+  border-radius: 25px;
+}
+.komentar {
+  background-color: rgb(4, 30, 66);
+  text-align: left;
+  color: white;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 5%;
+  max-width: 650px;
+  margin: 0 auto;
+
+  padding: 50px;
+}
+
+.article {
+  background-color: rgb(244, 226, 198);
+}
+
+.copyright {
+  color: white;
+}
+
+.morskakrava {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  padding-right: 30px;
+}
+
+.clanek {
+  font-family: "Inconsolata", sans-serif;
+  text-align: left;
+  color: black;
+  border-color: gray;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 5%;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 50px;
+}
+#name,
+#email,
+#number,
+#dropdown,
+#comment {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 5px 15px;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.studentsky-projekt {
+  position: absolute;
+  right: 20px;
+  color: white;
+}
+
+/**********************TABLET*********************/
+@media only screen and (min-width: 601px) {
+  .studentsky-projekt {
+    position: absolute;
+    right: 20px;
+    bottom: 95px;
+    color: black;
+  }
+
+  .clanek-logo {
+    margin-bottom: 10px;
+  }
+
+  .grid-index {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    padding-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+    padding-bottom: 80px;
+  }
+
+  .grid {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
+
+  .clanky {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+  .odkazy {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+    color: rgb(255, 255, 255);
+  }
+}
+
+/*********** DESKTOP ***********/
+@media screen and (min-width: 840px) {
+  .grid {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+  }
+
+  .grid-index {
+    display: grid;
+    grid-column-gap: 27px;
+    grid-template-columns: auto auto auto auto;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
+  .clanek-logo {
+    height: 230px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 0;
+    height: 100px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .search {
+    position: absolute;
+    right: 50px;
+  }
+
+  .s-results {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 10px;
+    list-style: none;
+  }
+
+  .studentsky-projekt {
+    position: absolute;
+    right: 20px;
+    bottom: 95px;
+    color: black;
+  }
+
+  .s-results a {
+    font-size: 18px;
+    text-decoration-line: underline;
+  }
+
+  .navbar input[type="text"] {
+    float: right;
+    border: none;
+    padding-left: 5px;
+    font-size: 1.3rem;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .reklama {
+    grid-row: 1 / 10;
+    border: 1px solid black;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .clanky {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .nav-link {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+    margin-right: 40px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .odkazy {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .morskakrava {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+
+  .container-authors {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .authors {
+    width: 35%;
+    margin: 10px;
+    padding-bottom: 20px;
+  }
+
+  .footer-main {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .authors-footer {
+    padding-top: 0;
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .subnav-content a {
+    width: 120px;
+    padding: 5px 10px;
+    border: 1px solid #e9e8e8;
+    background-color: #234385f6;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 150px;
+  }
+
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>projekt</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+    <h1><a href="index.html" class="logo">PLESK</a></h1>
+    <ul class="main-nav" id="js-menu">
+      <li class="subnav">
+        <a class="subnavbtn">Kategorie <i class="fa fa-caret-down"></i></a>
+        <div class="subnav-content">
+          <a href="politika.html">Politika</a>
+          <a href="sport.html">Sport</a>
+          <a href="umeni.html">Umeni</a>
+        </div>
+      </li>
+      <li><a href="./authors.html" class="nav-link">Redakce</a></li>
+      <li>
+        <form class="search" method="post">
+          <input type="text" placeholder="Vyhledat..">
+          <button type="button">
+            <a href="vyhledavani.html"><img class="img-search" src="search.png" alt="lupa-vyhledat"></a>
+          </button>
+        </form>
+      </li>
+    </ul>
+  </nav>
+  <article class=article>
+    <header>
+      <div class="bread-crumbs">
+        <ul>
+          <li><a class="btn-header" href="index.html"><img class="home-icon" src="home.png" alt="domeček"><a/></li>
+          <li><img  src="next.png" alt="šipka"></li>
+          <li>Koroun bezzubý</li>
+        </ul>
+      </div>
+      <h2>Koroun bezzubý</h2>
+    </header>
+    <script src="js/script.js"></script>
+    <br />
+    <br />
+    <div class="clanek">
+      <p>Koroun bezzubý, jinými názvy koroun severní, koroun Stellerův nebo mořská kráva (Hydrodamalis gigas), je
+        vyhynulý savec z řádu sirén. Druh poprvé objevil Georg Steller při druhé kamčatské expedici Vituse Beringa, když
+        loď Sv. Petr s posádkou roku 1741 ztroskotala na Beringově ostrově. Mnoho informací, které jsou o tomto druhu
+        známy, pochází ze Stellerových pozorování z volné přírody, přičemž po Stellerovi je toto zvíře někdy i nazýváno.
+      </p>
+      <div>
+        <br />
+        <aside>
+          <p><i>"To je macek!"</i></p>
+          <p>Antonín Polívka</p>
+      </div>
+      </aside>
+      <br />
+      <figure>
+      <img src="kapustnak.jpg" class="morskakrava" alt="mořská kráva">
+    <figcaption>Mořská kráva</figcaption>
+    </figure>
+      <br /><br />
+      <p>Koroun bezzubý byl mnohem větší než současné žijící druhy sirén; podle výpočtů paleontologa Daryla Domninga
+        největší jedinci z Beringova ostrova měřili téměř 8 metrů, což je více než dvojnásobná velikost ve srovnání s
+        moderními kapustňáky.[4] Jeho mohutná tělesná stavba ve srovnání s ostatními sirénami je vysvětlitelná
+        Bergmannovým pravidlem.[5]
+        Záznamy Georga Stellera poskytují dva protichůdné údaje o hmotnosti: 4 a 24,3 tun. Odhadovaná hmotnost se
+        nachází mezi těmito hodnotami, americký biolog Victor B. Scheffer pro 8metrovou mořskou krávu stanovil hmotnost
+        asi 10 tun.[6] Tyto údaje ještě korigoval Domning, podle něhož hmotnost činila přibližně 6,3 tun. Vzhledem k
+        nepříliš vhodným podmínkám poblíž Beringova ostrova je pravděpodobné, že zdejší populace byly menší v porovnání
+        s historickými populacemi korounů v jiných areálech.[4] Ti mohli dosahovat až 10metrové délky a hmotnosti asi 11
+        tun.[3] Koroun bezzubý patřil, spolu s velrybami, mezi největší savce holocénu.[7]
+        Na rozdíl od jiných sirén se koroun bezzubý zřejmě nikdy nemohl zcela potopit pod vodu. Měl velmi silnou
+        pokožku, až 2,5 cm tlustou, jež zabraňovala zraněním ostrými kameny či ledem, případně též bránila přílišnému
+        vysušení neponořené kůže.[4][8] Samotná kůže byla 6–7 cm tlustá, s až 3 cm silnou škárou.[9] Další důležitou
+        adaptací pro chladné vody Beringova moře byla 8 až 10 cm tlustá vrstva podkožní tukové tkáně.[10] Kůže měla
+        hnědočerné zbarvení, které bylo u některých jedinců doplněno bílými skvrnami. Na zádech byla kůže hladká, na
+        bocích drsná, s kráterovitými prohlubněmi (patrně způsobenými parazity); tento povrch, připomínající stromovou
+        kůru, vedl k tomu, že zvíře dostalo jméno koroun. Srst na těle rostla pouze řídce, nicméně vnitřní strana
+        ploutví byla porostlá štětinami. Přední končetiny měřily asi 67 cm, postrádaly nehty či drápy. Ocas byl vykrojen
+        na dvě poloviny podobně jako v případě dugonga indického (zatímco kapustňáci mají široký pádlovitý ocas).
+      </p>
+    </div>
+    <div class=komentar>
+      <p id="description">Zde můžete okomentovat</p>
+      <form id="survey-form">
+        <br />
+        <label for="name" id="name-label">Jméno</label>
+        <input id="name" type="text" placeholder="Vyplň své celé jméno" required>
+
+
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Vypň svůj email" required>
+
+
+        <label for="number" id="number-label">Věk</label>
+        <input id="number" type="number" placeholder="Kolik ti je let" required>
+
+
+        <label for="dropdown">Jak moc se ti to líbilo</label>
+        <select id="dropdown">
+          <option value="hodně">Hodně</option>
+          <option value="trochu">Trochu</option>
+          <option value="malo">Málo</option>
+          <option value="moc ne">moc ne</option>
+          <option value="skoro vubec">skoro vůbec</option>
+          <option value="vubec">vůbec</option>
+          <option value="nenavidim to">nenávidím to</option>
+          <option value="je mi to jedno">je mi to jedno</option>
+        </select>
+
+
+        <legend>Změnil by jsi něco na tomto článku?
+          <br>
+          <label for="ano"><input type="radio" name="change" id="ano" value="ano">
+            Ano</label> <br>
+
+          <label for="Možná"> <input type="radio" name="change" id="možná" value="možná">
+            Možná</label> <br>
+
+          <label for="ne"> <input type="radio" name="change" id="ne" value="ne">
+            Ne</label> <br>
+        </legend>
+
+        <legend>Co tě zajímá?
+          <br>
+          <label for="Informatika"><input id="Informatika" type="checkbox" name="field" value="Informatika">
+            Informatika</label>
+          <br>
+          <label for="Sport"><input id="Sport" type="checkbox" name="field" value="Sport"> Sport</label>
+          <br>
+          <label for="Biologie"><input id="Biologie" type="checkbox" name="field" value="Biologie"> Biologie</label>
+          <br>
+          <label for="Pečení"><input id="Pečení" type="checkbox" name="field" value="Pečení"> Pečení</label>
+          <br><br>
+        </legend>
+
+
+        <label for="comment">Chceš přidat komentář?</label>
+        <input id="comment" type="text" placeholder="Okomentuj zde">
+        <br>
+        <button id="submit" type="submit">Odeslat</button>
+    </div>
+    <br>
+  </article>
+
+  <footer>
+    <div class="odkazy">
+        <div>
+            <a href="./authors.html">
+                <p>Autoři<p>
+            </a>
+
+        </div>
+
+        <div>
+            <a class="email" href="mailto:projekt@google.com">
+                projekt@google.com
+            </a>
+        </div>
+
+        <div>
+            <a class="odkaz-logo" target="_blank" href="https://facebook.com">
+                <img src="fblogo.png" alt="facebook">
+            </a>
+        </div>
+
+        <div>
+            <p>2021</p>
+        </div>
+
+        <div>
+            <a class="tell" href="tel:+420999999999">+420 999 999 999</a>
+        </div>
+
+        <a class="odkaz-logo" target="_blank" href="https://instagram.com">
+            <img src="iglogo.png" alt="instagram">
+        </a>
+
+    </div>
+    <p class="copyright"><strong>Studentsky projekt © 2021</strong></p>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
